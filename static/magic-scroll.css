@@ -41,6 +41,6 @@ header > *, footer > * {
         width: 100vw;
     }
     .expo img {
-        max-width: 80vw;
+        max-width: calc(100vw - 40px);
     }
 }
