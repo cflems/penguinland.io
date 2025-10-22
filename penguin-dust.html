@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Penguin Dust | Penguinland II</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="static/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="static/magic-scroll.css" />
+    </head>
+    <body>
+        <header>
+            <h1>
+                <img src="static/penguin-dust.png" alt="Penguin Dust" height="32" />
+                <a href="https://penguinland.io/penguin-dust">Penguin Dust</a>
+                <img src="static/penguin-dust.png" alt="Penguin Dust" height="32" />
+            </h1>
+            <p>Penguinland&apos;s home-grown magic system.</p>
+        </header>
+        <section id="explanation">
+            <h2>What is Penguin Dust?</h2>
+            <p>
+                As you perform routine activities on Penguinland, you'll find a substance that looks
+                like pumpkin seeds accumulating in your inventory. This is called Penguin Dust, and it
+                is the foundation of all magical interactions on the server. Penguin Dust can be used
+                to imbue objects with spells, and to defend against magical damage.
+            </p>
+        </section>
+        <section id="imbuement">
+            <h2>Imbuement</h2>
+            <p>
+                So far there are two spells that can be imbued into objects. Imbuement is performed
+                at a crafting table using Penguin Dust, a familiar item specific to the desired spell,
+                and the item you wish to imbue. The amount of Penguin Dust controls the total magical
+                reserves of the object, and can be thought of as "mana". The amount of familiar item
+                controls the spell's rate of discharge. A higher rate of discharge will result in a
+                stronger spell, but also consume your dust reserves faster. The discharge rate cannot
+                ever be higher than the total amount of dust left in an object. Imbued spells and
+                discharge rates can be changed by following the crafting recipe from scratch, but
+                this will destroy any existing spell that was imbued into the object.
+            </p>
+            <div class="expo">
+                <img src="/static/imbuement.png" alt="Imbuing a Tool with Fire" height="128" />
+                <p>Imbuing a Tool with Fire</p>
+            </div>
+            <p>
+                Right-clicking with an imbued object in your hand will override the object's default
+                action discharge the imbued spell, unleashing its effects into the world. An amount of
+                dust equal to the rate of discharge will be consumed each time an object's spell is
+                used, and if the amount of dust ever reaches zero, the magical object will break.
+                However, dust reserves can be replenished by crafting the imbued object with more
+                Penguin Dust and no familiar item, without destroying the existing spell.
+            </p>
+            <div class="expo">
+                <img src="/static/replenishment.png" alt="Replenishing a Tool" height="128" />
+                <p>Replenishing a Tool</p>
+            </div>
+            <p>
+                Spells can be aimed by simply pointing your magical item where you wish for the spell
+                to land.
+            </p>
+        </section>
+        <section id="reinforcement">
+            <h2>Reinforcement</h2>
+            <p>
+                Some of Penguinland's spells can cause damage to players, so it's important to
+                understand how to defend against these. Any wearable item can be reinforced with
+                Penguin Dust simply by combining the two in any crafting window. When hit by a
+                damage-causing spell, a reinforced garment will absorb the strength of that spell
+                up to the amount of Penguin Dust stored within it. Like imbued items, reinforced
+                garments will break once their dust reserves are empty, but these can be replenished
+                in the same way as creating a reinforced garment in the first place. Magic damage
+                dealt to a player is evenly distributed across all reinforced armor pieces currently
+                being worn, so uneven dust distributions will make it more likely for a piece to break.
+            </p>
+            <div class="expo">
+                <img src="/static/reinforcement.png" alt="Reinforcing an Armor Piece" height="128" />
+                <p>Reinforcing an Armor Piece</p>
+            </div>
+        </section>
+        <section id="spells">
+            <h2>Spells</h2>
+            <p>
+                There are two schools of magic currently available, and this list will be updated as
+                more arise. These schools are:
+            </p>
+            <ul>
+                <li>
+                    <strong>Fire</strong> &mdash;
+                    Fire magic deals in fireballs, which can cause massive area-of-effect damage to
+                    structures and groups of enemies. Fireballs are slow but devastating harbingers of
+                    doom, invaluable for invading fortresses. Fire magic's familiar item is
+                    <img src="static/blaze-powder.png" alt="Blaze Powder" height="32" /> Blaze Powder.
+                </li>
+                <li>
+                    <strong>Lightning</strong> &mdash;
+                    Lightning magic deals in lightning bolts, which require precise aim, but deal
+                    devastating damage to single targets. Where fire magic is slow and explosive,
+                    lightning magic is surgically lethal, dealing its damage near instantly with
+                    minimal effect on the environment. Lightning bolts are invaluable for close
+                    quarters combat, narrow corridors, and eliminating high-value targets. Lightning
+                    magic's familiar item is
+                    <img src="static/copper-ingot.png" alt="Copper Ingot" height="32" /> Copper Ingot.
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <p>Go back <a class="secondary" href="/" target="_blank">home</a>.</p>
+        </footer>
+    </body>
+</html>

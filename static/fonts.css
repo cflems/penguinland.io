@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Knewave';
+    src: url('knewave.woff2') format('woff2');
+    font-display: block;
+}
+@font-face {
+    font-family: 'Caesar';
+    src: url('caesar.woff2') format('woff2');
+    font-display: block;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('noto.woff2') format('woff2');
+    font-display: block;
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('scp.woff2') format('woff2');
+    font-display: block;
+}
+:root {
+    --font-color-secondary: #30a0ff;
+    --code-bg-color: #a0c0e080;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.25rem;
+}
+h1 {
+    font-family: 'Knewave', sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+}
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Caesar', serif;
+    font-weight: 700;
+}
+.secondary {
+    font-family: 'Caesar', serif;
+    color: var(--font-color-secondary);
+}
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    background-color: var(--code-bg-color);
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}

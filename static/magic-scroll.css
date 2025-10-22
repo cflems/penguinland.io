@@ -1,0 +1,43 @@
+:root {
+    --page-margin-vertical: 64px;
+    --page-margin-horizontal: min(20vw, calc(100vw/2 - 400px));
+    --page-width: calc(100vw - 2*var(--page-margin-horizontal));
+}
+html {
+    background-image: url('penguinland.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body {
+    width: var(--page-width);
+    margin: var(--page-margin-vertical) var(--page-margin-horizontal);
+    padding: 20px;
+    background-color: #f7f2e1e0;
+    border-radius: 8px;
+}
+header, footer {
+    margin: 1rem 0px;
+    text-align: center;
+}
+header > *, footer > * {
+    margin: 0px;
+}
+.expo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+.expo p {
+    margin: 4px 0px;
+    font-size: 0.9rem;
+    color: #505050;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0px;
+        width: 100vw;
+    }
+}
