@@ -40,4 +40,7 @@ header > *, footer > * {
         margin: 0px;
         width: 100vw;
     }
+    .expo img {
+        max-width: 80vw;
+    }
 }
